@@ -133,7 +133,7 @@ $nivel = $_SESSION['nivel'];
 					<table id="compra">
 					<tr id="trcor"><td id="tdcor">CÓDIGO</td><td id="tdcor">PRODUTO</td><td id="tdcor">NOME</td><td id="tdcor">PREÇO</td><td id="tdcor">DESCRIÇÃO</td></tr>
 						<?php
-						$link=mysqli_connect('localhost','root','','geekclub');
+						$link=mysqli_connect('localhost','root','12345','geekclub');
 						$id = $_GET['id'];
 					
 							$sql="SELECT * FROM produtos WHERE id = $id"; 

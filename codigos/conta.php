@@ -136,7 +136,7 @@ $nivel = $_SESSION['nivel'];
 	</div>
 	<div id="conta">
 	<?php
-$link=mysqli_connect('localhost','root','','geekclub');
+$link=mysqli_connect('localhost','root','12345','geekclub');
 
 $sql="SELECT * FROM cliente WHERE email ='$email'"; 
 $resultado=mysqli_query($link,$sql);

@@ -121,11 +121,11 @@ $nivel = $_SESSION['nivel'];
 	<div id="produtos">
 	
 	<?php
-			$link=mysqli_connect('localhost','root','','geekclub');
+			$link=mysqli_connect('localhost','root','12345','geekclub');
 	?>
 	
 	<?php
-		$sql="SELECT * FROM produtos WHERE categoria = 3 && subcategoria = 8"; 
+		$sql= "SELECT * FROM produtos WHERE categoria = 3 && subcategoria = 8"; 
 		$resultado=mysqli_query($link,$sql);
 	
 

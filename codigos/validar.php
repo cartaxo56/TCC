@@ -3,7 +3,7 @@ session_start();
 $email=$_POST['email'];
 $senha=$_POST['senha'];
 
-$conexao=mysqli_connect("localhost","root","","geekclub");
+$conexao=mysqli_connect("localhost","root","12345","geekclub");
 $consulta="SELECT * FROM cliente WHERE email='$email' and senha='$senha'";
 $SESSION['email']=$_POST['email'];
 $SESSION['senha']=$_POST['senha'];

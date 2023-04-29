@@ -213,10 +213,7 @@ window.addEventListener("load",setaImagem,false);
 	<div id="teiaest">
 	<img src="teia.png">
 	</div>
-	<center><H1>CONHEÇA NOSSO CANAL!</H1></CENTER>
-	<div class="intro">
-	<center><iframe width="560" height="315" src="https://www.youtube.com/embed/N20vvZygVCo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></center>
-	</div>
+	
 	</div>
 	</main>
 	</div>

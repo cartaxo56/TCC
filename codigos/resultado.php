@@ -12,7 +12,7 @@ $email = $_SESSION['email'];
 $nivel = $_SESSION['nivel'];
  }
 
-$link = mysqli_connect('localhost','root','','geekclub');
+$link = mysqli_connect('localhost','root','12345','geekclub');
 $cpf=$_POST['cpf'];
 $nome=$_POST['nome'];
 $sobrenome=$_POST['sobrenome'];
@@ -42,6 +42,8 @@ $inserir = "insert into cliente(CPF,Nome,Sobrenome,Telefone,Sexo,Endereco,Numero
 VALUES ('$cpf','$nome','$sobrenome','$telefone','$sexo','$endereco','$logradouro','$cidade','$estado','$email','$senha','$nivel')";
 }
 $resul = mysqli_query($link,$inserir);
+
+
 
 ?>
 <html>
@@ -150,18 +152,18 @@ $resul = mysqli_query($link,$inserir);
 		<main>
 			<div id="conta">
 		<?php 
-		$link = mysqli_connect('localhost','root','','geekclub');
+		$link = mysqli_connect('localhost','root','12345','geekclub');
 
 
 if($codigo == 'GC2018'){
 $nivel = 2;
-$inserir = "insert into 'cliente'(CPF,Nome,Sobrenome,Telefone,Sexo,Endereco,NumeroCasa,Cidade,Estado,email,senha,nivel)
+$inserir = "insert into cliente(CPF,Nome,Sobrenome,Telefone,Sexo,Endereco,NumeroCasa,Cidade,Estado,email,senha,nivel)
 VALUES ('$cpf','$nome','$sobrenome','$telefone','$sexo','$endereco','$logradouro','$cidade','$estado','$email','$senha','$nivel')";
 
 }
 else{
 $nivel = 1;
-$inserir = "insert into 'cliente'(CPF,Nome,Sobrenome,Telefone,Sexo,Endereco,NumeroCasa,Cidade,Estado,email,senha,nivel)
+$inserir = "insert into cliente(CPF,Nome,Sobrenome,Telefone,Sexo,Endereco,NumeroCasa,Cidade,Estado,email,senha,nivel)
 VALUES ('$cpf','$nome','$sobrenome','$telefone','$sexo','$endereco','$logradouro','$cidade','$estado','$email','$senha','$nivel')";
 }
 mysqli_query($link,$inserir);

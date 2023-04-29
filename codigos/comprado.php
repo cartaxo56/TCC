@@ -1,5 +1,5 @@
 <?php
-$link = mysqli_connect('localhost','root','','geekclub');
+$link = mysqli_connect('localhost','root','12345','geekclub');
 $idp = $_GET['id'];
 $idc = $_GET['cpf'];
 $numerocartao = $_GET['numerocartao'];

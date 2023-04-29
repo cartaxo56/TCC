@@ -121,7 +121,7 @@ $nivel = $_SESSION['nivel'];
 	<div id="produtos">
 	
 	<?php
-			$link=mysqli_connect('localhost','root','','geekclub');
+			$link=mysqli_connect('localhost','root','12345','geekclub');
 	?>
 	
 	<?php
